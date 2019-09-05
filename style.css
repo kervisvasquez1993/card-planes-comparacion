@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content-card-padre{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+.content-card-hijo{
+    width: 200px;
+    height: 350px;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.content-card-hijo2{
+    background: blue;
+}
+.location7{
+    font-weight: bold;
+    width: 50%;
+    text-align: left;
+    float: left;
+    color: #fff;
+}
+.weather{
+    padding: 50px 0 20px;
+    text-align: center;
+}
+.weather .fa {
+    font-size: 80px;
+    color: #fff;
+
+}
+.weather h3{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color:#fff;
+    line-height: 26px;
+}
+.forecast{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.forecast li{
+    margin:  0 10px;
+    border-bottom: 2px solid #fff;
+    display: flex;
+    font-weight: bold;
+    color: #fff;
+    justify-content: space-evenly;
+}
+.forecast li:last-child{
+    border-bottom: none;
+
+}
+.forecast li .day{
+    width: 50%;
+    font-size: 12px
+}
+.forecast li .temperatura{
+    width: 10%;
+    text-align: right;
+}
+.temperatura{display: flex;}
+.forecast2{
+    height: 90%;
+    justify-content: space-evenly
+}
+.section-precio{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: center;
+    align-items: center;
+     justify-content: center;
+   
+}
+@media (max-width: 320px ){
+    .content-card-padre{
+     margin: 0;
+     padding-top: 10px;
+    
+ }
+ .section-precio{
+     width: 100vw;
+  align-items: center;
+ }
+ .forecast li{
+     margin: 0;
+     justify-content: space-between;
+     background: blue;
+ }
+}
+@media screen and (min-width: 321px) and (max-width: 619px){
+    .section-precio{
+     width: 100vw;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+   
+    .content-card-padre{
+        margin: 0;
+        padding-top: 10px;
+       
+    }
+}
